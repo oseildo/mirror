@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  
+  resource :vidros
+  
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

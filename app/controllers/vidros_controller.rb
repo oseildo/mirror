@@ -1,0 +1,2 @@
+class VidrosController < ApplicationController
+end
