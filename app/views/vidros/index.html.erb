@@ -1,0 +1,16 @@
+<h1>Lista de Vidros</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @vidros.each do |vidro| %>
+    <tr>
+      <td><%= vidro.title %></td>
+      <td><%= vidro.text %></td>
+      <td><%= link_to 'Mostrar item', vidro_path(vidro) %></td>
+    </tr>
+  <% end %>
+</table>

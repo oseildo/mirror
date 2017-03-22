@@ -2,6 +2,10 @@ class VidrosController < ApplicationController
     def new
     end
     
+    def index
+        @vidros = Vidro.all
+    end
+    
     def show
         @vidro = Vidro.find(params[:id])
     end
