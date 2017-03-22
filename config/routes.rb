@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  resource :vidros
+  resources :vidros
   
   root 'welcome#index'
 
