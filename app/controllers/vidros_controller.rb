@@ -11,7 +11,7 @@ class VidrosController < ApplicationController
         @vidro = Vidro.new(vidro_params)
         
         @vidro.save
-        redirect_to @vidro
+        redirect_to vidros_path
     end
     
     private
