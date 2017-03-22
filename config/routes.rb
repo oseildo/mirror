@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   
-  resource :vidros
+  resources :doors
+  resources :vidros
+  
+
   
   root 'welcome#index'
 
